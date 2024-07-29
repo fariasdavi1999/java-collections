@@ -1,4 +1,4 @@
-package main.java.edu.davi.list.task;
+package main.java.edu.davi.list.basicOperations.task;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ public class TaskList {
 	public void removeTask(String title) {
 		List<Task> tasksToRemove = new ArrayList<>();
 		for (Task task : tasks) {
-			if (task.getDescricao().equals(title)) {
+			if (task.getTitle().equals(title)) {
 				tasksToRemove.add(task);
 			}
 		}
