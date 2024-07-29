@@ -1,4 +1,4 @@
-package main.java.edu.davi.list.basicOperations.task;
+package main.java.edu.davi.list.basicops.task;
 
 import java.util.ArrayList;
 import java.util.List;

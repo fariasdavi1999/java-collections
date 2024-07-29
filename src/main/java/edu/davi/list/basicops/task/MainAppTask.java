@@ -1,4 +1,4 @@
-package main.java.edu.davi.list.basicOperations.task;
+package main.java.edu.davi.list.basicops.task;
 
 public class MainAppTask {
 	public static void main(String[] args) {
