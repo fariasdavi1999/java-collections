@@ -27,12 +27,17 @@ public class ShoppingCart {
 	}
 
 	public double totalPrice() {
-		double totalPrice = 0.0;
-		for (Item item : items) {
-			double itemPrice = item.getPrice() * item.getQuantity();
-			totalPrice += itemPrice;
+//		double totalPrice = 0.0;
+//		for (Item item : items) {
+//			double itemPrice = item.getPrice() * item.getQuantity();
+//			totalPrice += itemPrice;
+//		}
+//		return totalPrice;
+		if (items.isEmpty()) {
+//			poderia se lançar uma exception
+			System.out.println("Empty items");
 		}
-		return totalPrice;
+		return items.stream().mapToDouble(item -> item.getPrice() * item.getQuantity()).sum();
 	}
 
 	public void listItems() {
