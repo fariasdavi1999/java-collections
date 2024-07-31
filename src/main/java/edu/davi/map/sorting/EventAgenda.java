@@ -23,7 +23,6 @@ public class EventAgenda {
 
 	public void nextEvent() {
 		LocalDate atualDate = LocalDate.now();
-		Map<LocalDate, Event> events = new TreeMap<>(eventsMap);
 		//para chave (localdate), valor(evento) entry
 		for (Map.Entry<LocalDate, Event> entry : eventsMap.entrySet()) {
 			if (entry.getKey().isEqual(atualDate) || entry.getKey().isAfter(atualDate)) {
